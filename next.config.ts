@@ -4,7 +4,10 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  // Enable standalone output for Docker/Railway deployment
+  output: 'standalone',
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
@@ -13,6 +16,10 @@ const nextConfig: NextConfig = {
       {
         protocol: "https", 
         hostname: "coin-images.coingecko.com",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn.jsdelivr.net",
       },
     ],
   },

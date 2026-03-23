@@ -23,3 +23,7 @@ max = 1
 [env]
 NODE_ENV = "production"
 PORT = "3000"
+
+# Use Node.js 20 for Next.js compatibility
+[build.variables]
+NIXPACKS_NODE_VERSION = "20"
