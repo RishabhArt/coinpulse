@@ -145,7 +145,7 @@
 
 @layer base {
   * {
-    @apply border-gray-200 outline-ring/50;
+    @apply border-gray-200 outline-blue-500/50;
   }
   body {
     @apply bg-dark-700 text-foreground;
