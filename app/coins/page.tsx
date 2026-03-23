@@ -21,6 +21,9 @@ const Coins = async ({ searchParams }: NextPageProps) => {
     price_change_percentage: '24h',
   });
 
+  // Ensure we have an array even if API fails
+  const safeCoinsData = Array.isArray(coinsData) ? coinsData : [];
+
   const columns: DataTableColumn<CoinMarketData>[] = [
     {
       header: 'Rank',
@@ -37,7 +40,7 @@ const Coins = async ({ searchParams }: NextPageProps) => {
       cellClassName: 'token-cell',
       cell: (coin) => (
         <div className="token-info">
-          <Image src={coin.image} alt={coin.name} width={36} height={36} />
+          <Image src={coin.image} alt={coin.name} width={36} height={36} style={{ width: 'auto', height: 'auto' }} />
           <p>
             {coin.name} ({coin.symbol.toUpperCase()})
           </p>
@@ -75,7 +78,7 @@ const Coins = async ({ searchParams }: NextPageProps) => {
     },
   ];
 
-  const hasMorePages = coinsData.length === perPage;
+  const hasMorePages = safeCoinsData.length === perPage;
 
   const estimatedTotalPages = currentPage >= 100 ? Math.ceil(currentPage / 100) * 100 + 100 : 100;
 
@@ -87,7 +90,7 @@ const Coins = async ({ searchParams }: NextPageProps) => {
         <DataTable
           tableClassName="coins-table"
           columns={columns}
-          data={coinsData}
+          data={safeCoinsData}
           rowKey={(coin) => coin.id}
         />
 

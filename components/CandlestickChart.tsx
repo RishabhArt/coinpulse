@@ -59,6 +59,10 @@ const CandlestickChart = ({
   };
 
   useEffect(() => {
+    setOhlcData(data ?? []);
+  }, [data]);
+
+  useEffect(() => {
     const container = chartContainerRef.current;
     if (!container) return;
 

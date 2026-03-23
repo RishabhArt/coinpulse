@@ -44,7 +44,7 @@ const CoinHeader = ({
       <h3>{name}</h3>
 
       <div className="info">
-        <Image src={image} alt={name} width={77} height={77} />
+        <Image src={image} alt={name} width={77} height={77} style={{ width: 'auto', height: 'auto' }} />
 
         <div className="price-row">
           <h1>{formatCurrency(livePrice)}</h1>
