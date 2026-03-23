@@ -152,11 +152,11 @@
 
 @layer components {
   .container {
-    @apply px-4 sm:px-6 mx-auto max-w-360;
+    @apply px-4 sm:px-6 mx-auto max-w-7xl;
   }
 
   .main-container {
-    @apply py-6 md:py-12 mx-auto px-4 sm:px-6 max-w-360 w-full space-y-6 md:space-y-6;
+    @apply py-6 md:py-12 mx-auto px-4 sm:px-6 max-w-7xl w-full space-y-6 md:space-y-6;
   }
 
   .badge {
@@ -500,7 +500,7 @@
   }
 
   #coin-details-page {
-    @apply py-12 px-4 sm:px-6 mx-auto max-w-360 size-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 items-center gap-6 xl:gap-10 justify-center;
+    @apply py-12 px-4 sm:px-6 mx-auto max-w-7xl size-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 items-center gap-6 xl:gap-10 justify-center;
 
     .primary {
       @apply size-full xl:col-span-2;
@@ -572,7 +572,7 @@
   }
 
   #coins-page {
-    @apply py-12 px-4 sm:px-6 mx-auto max-w-360 size-full items-center gap-10 justify-center;
+    @apply py-12 px-4 sm:px-6 mx-auto max-w-7xl size-full items-center gap-10 justify-center;
 
     .content {
       @apply flex flex-col w-full space-y-5;
