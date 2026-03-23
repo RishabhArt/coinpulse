@@ -1,7 +1,6 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-@import 'tw-animate-css';
 
 @layer base {
   * {
@@ -90,7 +89,7 @@
   }
 
   #coin-card {
-    @apply bg-dark-500 hover:bg-dark-400/50 transition-all rounded-lg p-5 border border-purple-600/20 hover:border-purple-600/50 cursor-pointer h-fit;
+    @apply bg-gray-800 hover:bg-gray-700/50 transition-all rounded-lg p-5 border border-gray-600/20 hover:border-gray-600/50 cursor-pointer h-fit;
 
     .header {
       @apply flex gap-3 mb-4;
@@ -127,7 +126,7 @@
         @apply flex gap-1 justify-between;
 
         .label {
-          @apply text-purple-100;
+          @apply text-gray-100;
         }
 
         .value {
@@ -138,7 +137,7 @@
   }
 
   #categories {
-    @apply pt-8 mt-5 w-full bg-dark-500 rounded-xl overflow-hidden;
+    @apply pt-8 mt-5 w-full bg-gray-800 rounded-xl overflow-hidden;
 
     h4 {
       @apply text-xl md:text-2xl font-semibold mb-2 pl-5;
@@ -174,14 +173,14 @@
   }
 
   #trending-coins {
-    @apply w-full flex flex-col justify-center h-full py-4 bg-dark-500 rounded-xl;
+    @apply w-full flex flex-col justify-center h-full py-4 bg-gray-800 rounded-xl;
 
     h4 {
       @apply text-xl md:text-2xl font-semibold mb-2 px-5;
     }
 
     .trending-coins-table {
-      @apply bg-dark-500 overflow-hidden;
+      @apply bg-gray-800 overflow-hidden;
 
       .name-cell {
         @apply font-bold;
@@ -218,7 +217,7 @@
   }
 
   #categories-fallback {
-    @apply pt-8 mt-5 w-full bg-dark-500 rounded-xl overflow-hidden;
+    @apply pt-8 mt-5 w-full bg-gray-800 rounded-xl overflow-hidden;
 
     h4 {
       @apply text-xl md:text-2xl font-semibold mb-2 pl-5;
@@ -274,50 +273,50 @@
   }
 
   #coin-overview-fallback {
-    @apply w-full h-full xl:col-span-2 px-2 bg-dark-500 rounded-xl;
+    @apply w-full h-full xl:col-span-2 px-2 bg-gray-800 rounded-xl;
 
     .header {
       @apply flex-1 mb-2 flex gap-2 md:gap-3;
-    }
 
-    .header-image {
-      @apply w-10 h-10 md:w-14 md:h-14 rounded-full;
-    }
+      .header-image {
+        @apply w-10 h-10 md:w-14 md:h-14 rounded-full;
+      }
 
-    .info {
-      @apply flex flex-col gap-2;
-    }
+      .info {
+        @apply flex flex-col gap-2;
+      }
 
-    .header-line-sm {
-      @apply h-3 w-24 md:w-28;
-    }
+      .header-line-sm {
+        @apply h-3 w-24 md:w-28;
+      }
 
-    .header-line-lg {
-      @apply h-7 w-36 md:w-44;
-    }
+      .header-line-lg {
+        @apply h-7 w-36 md:w-44;
+      }
 
-    .period-button-skeleton {
-      @apply h-7 w-9 md:w-10 rounded-sm;
-    }
+      .period-button-skeleton {
+        @apply h-7 w-9 md:w-10 rounded-sm;
+      }
 
-    .chart {
-      @apply h-90;
-    }
+      .chart {
+        @apply h-90;
+      }
 
-    .chart-skeleton {
-      @apply h-full w-full rounded-xl;
+      .chart-skeleton {
+        @apply h-full w-full rounded-xl;
+      }
     }
   }
 
   #trending-coins-fallback {
-    @apply w-full flex flex-col justify-center h-full py-4 bg-dark-500 rounded-xl;
+    @apply w-full flex flex-col justify-center h-full py-4 bg-gray-800 rounded-xl;
 
     h4 {
       @apply text-xl md:text-2xl font-semibold mb-2 px-5;
     }
 
     .trending-coins-table {
-      @apply bg-dark-500 overflow-hidden;
+      @apply bg-gray-800 overflow-hidden;
 
       .name-cell {
         @apply font-bold;
@@ -325,14 +324,14 @@
 
       .name-link {
         @apply pl-1 md:pl-2 py-1 md:py-2 xl:py-1 flex items-center gap-2 md:gap-3;
-      }
 
-      .name-image {
-        @apply rounded-full size-8 md:size-9;
-      }
+        .name-image {
+          @apply rounded-full size-8 md:size-9;
+        }
 
-      .name-line {
-        @apply h-4 w-24;
+        .name-line {
+          @apply h-4 w-24;
+        }
       }
 
       .change-cell {
@@ -381,7 +380,7 @@
     }
 
     .exchange-table {
-      @apply bg-dark-500 rounded-xl overflow-hidden mt-5;
+      @apply bg-gray-800 rounded-xl overflow-hidden mt-5;
 
       .exchange-name {
         @apply text-green-500 font-bold;
@@ -419,10 +418,10 @@
         @apply rounded-lg grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-3 sm:gap-5;
 
         li {
-          @apply text-base bg-dark-500 px-5 py-6 rounded-lg flex flex-col gap-3;
+          @apply text-base bg-gray-800 px-5 py-6 rounded-lg flex flex-col gap-3;
 
           .label {
-            @apply text-purple-100;
+            @apply text-gray-100;
           }
 
           .link {
@@ -445,10 +444,10 @@
     }
 
     .coins-table {
-      @apply bg-dark-500 rounded-xl max-h-fit overflow-hidden;
+      @apply bg-gray-800 rounded-lg max-h-fit overflow-hidden;
 
       .rank-cell {
-        @apply pl-5 max-w-20! py-5 font-medium text-purple-100;
+        @apply pl-5 max-w-20! py-5 font-medium text-gray-100;
 
         a {
           @apply absolute inset-0 z-10;
@@ -487,7 +486,7 @@
 
   #search-modal {
     .trigger {
-      @apply px-6 hover:bg-transparent! font-medium transition-all h-full cursor-pointer text-base text-purple-100 flex items-center gap-2;
+      @apply px-6 hover:bg-transparent! font-medium transition-all h-full cursor-pointer text-base text-gray-100 flex items-center gap-2;
     }
 
     .kbd {
@@ -495,37 +494,31 @@
     }
 
     .dialog {
-      @apply bg-dark-400! max-w-sm sm:max-w-md md:max-w-2xl mx-auto;
+      @apply bg-gray-800! max-w-sm sm:max-w-md md:max-w-2xl mx-auto;
     }
 
     .cmd-input {
-      @apply bg-dark-500!;
+      @apply bg-gray-700!;
 
       input {
-        @apply placeholder:text-purple-100!;
+        @apply placeholder:text-gray-100!;
       }
     }
 
     .list {
-      @apply bg-dark-500 max-h-100;
+      @apply bg-gray-700 max-h-100;
     }
 
     .heading {
-      @apply flex items-center gap-2 text-purple-100;
+      @apply flex items-center gap-2 text-gray-100;
     }
 
     .group {
-      @apply bg-dark-500 text-purple-100;
-    }
-  }
-
-  .dialog {
-    .empty {
-      @apply py-6 text-center text-sm text-gray-400;
+      @apply bg-gray-700 text-gray-100;
     }
 
     .search-item {
-      @apply grid grid-cols-4 gap-4 items-center justify-between data-[selected=true]:bg-dark-400 transition-all !cursor-pointer hover:bg-dark-400 py-3;
+      @apply grid grid-cols-4 gap-4 items-center justify-between data-[selected=true]:bg-gray-600 transition-all !cursor-pointer hover:bg-gray-600 py-3;
 
       .coin-info {
         @apply flex gap-4 items-center col-span-2;
@@ -536,10 +529,10 @@
 
         div {
           @apply flex flex-col;
-        }
 
-        .coin-symbol {
-          @apply text-sm text-purple-100 uppercase;
+          .coin-symbol {
+            @apply text-sm text-gray-100 uppercase;
+          }
         }
       }
 
@@ -548,7 +541,7 @@
       }
 
       .coin-change {
-        @apply flex gap-1 text-sm lg:text-base items-center font-medium;
+        @apply flex gap-1 items-center text-sm lg:text-base font-medium;
       }
     }
   }
@@ -561,21 +554,21 @@
     }
 
     .panel {
-      @apply space-y-2 bg-dark-500 px-5 py-7 rounded-lg;
+      @apply space-y-2 bg-gray-800 px-5 py-7 rounded-lg;
     }
 
     .input-wrapper {
-      @apply bg-dark-400 h-12 w-full rounded-md flex items-center justify-between py-4 pr-4;
+      @apply bg-gray-700 h-12 w-full rounded-md flex items-center justify-between py-4 pr-4;
 
       .input {
-        @apply flex-1 text-lg! border-none font-medium bg-dark-400! focus-visible:ring-0 shadow-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none;
+        @apply flex-1 text-lg! border-none font-medium bg-gray-700! focus-visible:ring-0 shadow-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none;
       }
 
       .coin-info {
         @apply flex items-center gap-1;
 
         p {
-          @apply font-semibold text-base text-purple-100;
+          @apply font-semibold text-base text-gray-100;
         }
       }
     }
@@ -584,35 +577,35 @@
       @apply relative flex justify-center items-center my-4;
 
       .line {
-        @apply h-px z-10 w-full bg-dark-400 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+        @apply h-px z-10 w-full bg-gray-600 absolute top-1/2 left-0 right-0;
       }
 
       .icon {
-        @apply size-8 z-20 bg-dark-400 rounded-full p-2 text-green-500;
+        @apply size-8 z-20 bg-gray-700 rounded-full p-2 text-green-500;
       }
     }
 
     .output-wrapper {
-      @apply bg-dark-400 h-12 w-full rounded-md flex items-center justify-between py-4 pl-4;
+      @apply bg-gray-700 h-12 w-full rounded-md flex items-center justify-between pl-4;
 
       p {
         @apply text-base font-medium;
       }
 
       .select-trigger {
-        @apply w-fit! border-none! cursor-pointer! h-12! bg-dark-400! hover:bg-dark-400! focus-visible:ring-0!;
+        @apply w-fit! border-none! cursor-pointer! h-12! bg-gray-700! hover:bg-gray-600! focus-visible:ring-0!;
 
         .select-value {
-          @apply font-semibold! text-xs! text-purple-100!;
+          @apply font-semibold! text-xs! text-gray-100!;
         }
       }
 
       .select-content[data-converter] {
-        @apply bg-dark-400 max-h-125;
+        @apply bg-gray-700 max-h-125;
+      }
 
-        .select-item {
-          @apply cursor-pointer hover:bg-dark-500!;
-        }
+      .select-item {
+        @apply cursor-pointer hover:bg-gray-600!;
       }
     }
   }
@@ -621,15 +614,18 @@
     @apply mt-8 w-full;
 
     .tabs-list {
-      @apply size-full! p-1! bg-transparent! border-b! border-dark-500! rounded-none!;
+      @apply size-full! p-1! bg-transparent! border-b! border-gray-600! rounded-none!;
+
+      .tabs-trigger {
+        @apply data-[state=active]:border-none! data-[state=active]:bg-transparent! flex justify-start! mb-0! py-2! text-lg! font-semibold md:text-2xl!;
+
+      .tabs-content {
+        @apply gap-4! mt-2! md:gap-5! sm:grid-cols-2! lg:grid-cols-1! grid! items-start lg:items-center;
+      }
     }
 
-    .tabs-trigger {
-      @apply data-[state=active]:border-none! data-[state=active]:bg-transparent! flex justify-start! mb-0! py-2! text-lg! font-semibold! md:text-2xl!;
-    }
-
-    .tabs-content {
-      @apply gap-4! mt-2! md:gap-5! sm:grid-cols-2! lg:grid-cols-1! grid!;
+    .tabs-content > div {
+      @apply bg-gray-800 rounded-lg p-4;
     }
   }
 
@@ -660,21 +656,25 @@
       @apply grid grid-cols-3 mt-8 gap-4 sm:gap-6 w-fit;
 
       li {
-        @apply text-base border-r last:border-none border-purple-600 flex flex-col gap-2;
+        @apply text-base border-r last:border-none border-gray-600 flex flex-col gap-2 py-6 rounded-lg;
 
         .label {
-          @apply text-purple-100 max-sm:text-sm;
+          @apply text-gray-100;
         }
 
         .value {
-          @apply flex gap-1 flex-1 items-end text-base font-medium;
+          @apply font-medium;
+        }
+
+        .link {
+          @apply flex items-center text-green-500 gap-1;
         }
       }
     }
   }
 
   #coin-overview {
-    @apply w-full h-full xl:col-span-2 px-2 bg-dark-500 rounded-xl;
+    @apply w-full h-full xl:col-span-2 px-2 bg-gray-800 rounded-xl;
 
     .header {
       @apply flex-1 mb-2 flex gap-2 md:gap-3;
@@ -687,7 +687,7 @@
         @apply flex flex-col;
 
         p {
-          @apply flex text-purple-100 text-xs md:text-sm w-fit;
+          @apply flex text-gray-100 text-xs md:text-sm w-fit;
         }
 
         h1 {
@@ -703,7 +703,7 @@
     }
 
     .pagination-control {
-      @apply bg-dark-400 rounded-sm py-1;
+      @apply bg-gray-700 rounded-sm py-1;
 
       &.prev {
         @apply pr-2;
@@ -730,7 +730,7 @@
       }
 
       .page-link {
-        @apply hover:bg-dark-400! rounded-sm text-base cursor-pointer;
+        @apply hover:bg-gray-700! rounded-sm text-base cursor-pointer;
       }
 
       .page-link-active {
@@ -743,8 +743,7 @@
     @apply size-full xl:col-span-2;
 
     .divider {
-      @apply my-8! bg-purple-600!;
-    }
+      @apply my-8! bg-gray-600!;
 
     .trend {
       @apply w-full;
